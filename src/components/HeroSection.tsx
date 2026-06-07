@@ -17,12 +17,12 @@ const HeroSection: React.FC = () => {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6, ease: 'easeOut' }}
-        className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-blue-600 to-blue-700 px-6 py-10 md:px-12 md:py-16"
+        className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-blue-600 via-indigo-600 to-blue-800 px-6 py-12 md:px-12 md:py-20 shadow-[0_8px_30px_rgb(37,99,235,0.3)]"
       >
-        {/* Decorative circles */}
-        <div className="pointer-events-none absolute -right-10 -top-10 h-40 w-40 rounded-full bg-white/10" />
-        <div className="pointer-events-none absolute -bottom-8 -left-8 h-32 w-32 rounded-full bg-white/10" />
-        <div className="pointer-events-none absolute right-16 bottom-12 h-20 w-20 rounded-full bg-white/5" />
+        {/* Decorative glowing orbs */}
+        <div className="pointer-events-none absolute -right-20 -top-20 h-72 w-72 rounded-full bg-white/10 blur-3xl" />
+        <div className="pointer-events-none absolute -bottom-24 -left-20 h-64 w-64 rounded-full bg-indigo-400/30 blur-3xl" />
+        <div className="pointer-events-none absolute right-10 bottom-10 h-40 w-40 rounded-full bg-blue-300/20 blur-2xl" />
 
         {/* Dot pattern */}
         <div className="pointer-events-none absolute right-6 top-6 grid grid-cols-3 gap-2 opacity-20">
@@ -42,7 +42,7 @@ const HeroSection: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.15, ease: 'easeOut' }}
-            className="text-2xl font-extrabold leading-tight text-white md:text-4xl"
+            className="text-3xl font-extrabold leading-tight tracking-tight text-white drop-shadow-md md:text-5xl"
           >
             Wujudkan Potensi Terbaik Anak Bersama Bimbel Alazza
           </motion.h1>
@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
-            className="mt-3 text-sm leading-relaxed text-blue-100 md:text-base"
+            className="mt-4 text-sm leading-relaxed text-blue-50 md:text-lg opacity-90"
           >
             Rumah belajar yang berfokus pada pendampingan intensif, nyaman, dan menyenangkan. Bukan sekadar mengulang pelajaran, tapi membantu anak memahami konsep dasar dengan percaya diri dan pembiasaan adab keseharian
           </motion.p>
@@ -66,13 +66,13 @@ const HeroSection: React.FC = () => {
               href="https://wa.me/6285222828303?text=Halo%20Admin%2C%20saya%20ingin%20konsultasi%20tentang%20program%20bimbel%20Alazza."
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center rounded-full border-2 border-white bg-white px-5 py-2.5 text-sm font-semibold text-blue-600 transition-colors duration-200 hover:bg-blue-50"
+              className="inline-flex items-center rounded-full border-2 border-white bg-white px-6 py-3 text-sm font-bold text-blue-600 shadow-lg transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:bg-blue-50 active:scale-95 md:px-8 md:text-base"
             >
               Konsultasi Gratis
             </a>
             <button
               onClick={scrollToRegistration}
-              className="inline-flex items-center rounded-full border-2 border-white/60 bg-transparent px-5 py-2.5 text-sm font-semibold text-white transition-colors duration-200 hover:bg-white/10"
+              className="inline-flex items-center rounded-full border-2 border-white/60 bg-white/10 px-6 py-3 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:-translate-y-1 hover:bg-white/20 active:scale-95 md:px-8 md:text-base"
             >
               Daftar Sekarang
             </button>

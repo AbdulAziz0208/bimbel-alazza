@@ -30,7 +30,7 @@ const ProgramSection: React.FC = () => {
   return (
     <section className="mt-16 px-4 max-w-5xl mx-auto" id="programs">
       <div className="text-center mb-10">
-        <h2 className="text-2xl font-bold text-slate-900 md:text-3xl lg:text-4xl">
+        <h2 className="text-3xl font-extrabold md:text-4xl lg:text-5xl tracking-tight bg-clip-text text-transparent bg-gradient-to-r from-blue-700 to-indigo-700 pb-2">
           Rincian Investasi Pendidikan
         </h2>
         <div className="mt-6 flex flex-col sm:flex-row items-center justify-center gap-3">
@@ -55,9 +55,9 @@ const ProgramSection: React.FC = () => {
         {/* Level 1 Card */}
         <motion.div
           variants={cardVariants}
-          className="relative rounded-3xl bg-white p-6 md:p-8 shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col overflow-hidden"
+          className="relative rounded-3xl bg-white p-6 md:p-8 shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-blue-200"
         >
-          <div className="absolute top-0 left-0 w-full h-2 bg-blue-500"></div>
+          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-blue-400 to-blue-600"></div>
           
           <div className="mb-6">
             <h3 className="text-xl font-bold text-slate-900 mb-2">Level 1: Fokus & Intensif</h3>
@@ -109,7 +109,7 @@ const ProgramSection: React.FC = () => {
 
           <button
             onClick={scrollToRegistration}
-            className="mt-8 w-full rounded-full bg-blue-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-blue-700 hover:shadow-lg hover:shadow-blue-500/25"
+            className="mt-8 w-full rounded-full bg-gradient-to-r from-blue-600 to-indigo-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:from-blue-700 hover:to-indigo-700 hover:shadow-lg hover:shadow-blue-500/25 active:scale-95"
           >
             Pilih Paket Level 1
           </button>
@@ -118,9 +118,9 @@ const ProgramSection: React.FC = () => {
         {/* Level 2 Card */}
         <motion.div
           variants={cardVariants}
-          className="relative rounded-3xl bg-white p-6 md:p-8 shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col overflow-hidden"
+          className="relative rounded-3xl bg-white p-6 md:p-8 shadow-xl shadow-slate-200/50 border border-slate-100 flex flex-col overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl hover:shadow-purple-200"
         >
-          <div className="absolute top-0 left-0 w-full h-2 bg-purple-500"></div>
+          <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-purple-400 to-pink-500"></div>
           
           <div className="mb-6">
             <h3 className="text-xl font-bold text-slate-900 mb-2">Level 2: Mendalam & Komprehensif</h3>
@@ -172,7 +172,7 @@ const ProgramSection: React.FC = () => {
 
           <button
             onClick={scrollToRegistration}
-            className="mt-8 w-full rounded-full bg-purple-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-200 hover:bg-purple-700 hover:shadow-lg hover:shadow-purple-500/25"
+            className="mt-8 w-full rounded-full bg-gradient-to-r from-purple-600 to-pink-600 px-6 py-3 text-sm font-semibold text-white transition-all duration-300 hover:from-purple-700 hover:to-pink-700 hover:shadow-lg hover:shadow-purple-500/25 active:scale-95"
           >
             Pilih Paket Level 2
           </button>

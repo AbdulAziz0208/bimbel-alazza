@@ -60,7 +60,7 @@ const cardVariants = {
 const BenefitSection: React.FC = () => {
   return (
     <section className="mx-4 mt-10">
-      <h2 className="text-lg font-bold text-slate-900 md:text-2xl">
+      <h2 className="text-xl font-extrabold text-slate-900 md:text-3xl tracking-tight">
         Apa saja keunggulan di Bimbel Alazza?
       </h2>
 
@@ -77,13 +77,13 @@ const BenefitSection: React.FC = () => {
             <motion.div
               key={benefit.title}
               variants={cardVariants}
-              className="rounded-2xl bg-white p-6 shadow-sm"
+              className="rounded-2xl border border-slate-100 bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:border-blue-100 group"
             >
               <div
-                className={`flex h-12 w-12 items-center justify-center rounded-xl ${benefit.iconBg}`}
+                className={`flex h-14 w-14 items-center justify-center rounded-xl transition-transform duration-300 group-hover:scale-110 ${benefit.iconBg}`}
               >
                 <Icon
-                  className={`h-6 w-6 ${benefit.iconColor}`}
+                  className={`h-7 w-7 ${benefit.iconColor}`}
                   strokeWidth={2}
                 />
               </div>
@@ -103,9 +103,11 @@ const BenefitSection: React.FC = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ delay: 0.5, duration: 0.5 }}
-        className="mt-8 rounded-xl bg-slate-50 p-6 text-center shadow-inner"
+        className="mt-10 rounded-2xl bg-gradient-to-r from-blue-50 to-indigo-50 border border-blue-100/50 p-8 text-center shadow-sm relative overflow-hidden"
       >
-        <p className="text-base font-medium italic text-slate-700 md:text-lg">
+        <div className="absolute top-0 right-0 -mt-4 -mr-4 w-24 h-24 bg-blue-100 rounded-full blur-2xl opacity-50"></div>
+        <div className="absolute bottom-0 left-0 -mb-4 -ml-4 w-24 h-24 bg-indigo-100 rounded-full blur-2xl opacity-50"></div>
+        <p className="relative z-10 text-base font-semibold italic leading-relaxed text-slate-700 md:text-lg">
           "Kami percaya, setiap anak adalah bisa dengan caranya sendiri. Apakah
           Ayah/Bunda sedang mencari tempat belajar yang nyaman untuk Ananda?"
         </p>

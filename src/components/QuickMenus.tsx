@@ -54,14 +54,14 @@ const QuickMenus: React.FC = () => {
             <button
               key={menu.label}
               onClick={scrollToRegistration}
-              className="flex flex-col items-center gap-2 transition-transform duration-200 active:scale-95"
+              className="group flex flex-col items-center gap-3 transition-all duration-300 hover:-translate-y-1 active:scale-95"
             >
               <div
-                className={`flex h-14 w-14 items-center justify-center rounded-full ${menu.bgColor}`}
+                className={`flex h-16 w-16 items-center justify-center rounded-2xl shadow-sm transition-shadow duration-300 group-hover:shadow-md ${menu.bgColor}`}
               >
-                <Icon className={`h-6 w-6 ${menu.iconColor}`} strokeWidth={2} />
+                <Icon className={`h-7 w-7 ${menu.iconColor}`} strokeWidth={2} />
               </div>
-              <span className="text-xs font-medium text-slate-700">
+              <span className="text-xs font-semibold text-slate-700 transition-colors group-hover:text-blue-600">
                 {menu.label}
               </span>
             </button>
