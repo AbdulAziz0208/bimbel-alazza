@@ -30,7 +30,7 @@ const benefits: Benefit[] = [
     iconColor: 'text-amber-600',
   },
   {
-    title: 'Pembiasaan Positif',
+    title: 'Pembiasaan Adab Keseharian',
     description:
       'Selain fokus pada akademik, kami menanamkan adab dan karakter baik agar anak tumbuh menjadi pribadi berakhlak mulia.',
     icon: Heart,
