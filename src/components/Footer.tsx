@@ -17,8 +17,11 @@ const Footer: React.FC = () => {
         <div className="grid grid-cols-1 gap-8 md:grid-cols-2">
           {/* Logo & description */}
           <div>
-            <h3 className="text-xl font-bold text-white">Bimbel Alazza</h3>
-            <p className="mt-3 text-sm leading-relaxed text-slate-400">
+            <div className="flex items-center gap-3">
+              <img src="/images/logo.png" alt="Bimbel Alazza Logo" className="h-14 w-auto object-contain bg-white rounded-xl p-1.5" />
+              <h3 className="text-2xl font-bold text-white">Bimbel Alazza</h3>
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-slate-400">
               Bimbel Alazza hadir untuk membantu anak-anak Indonesia meraih
               potensi terbaik mereka melalui metode belajar interaktif dan tutor
               berpengalaman.

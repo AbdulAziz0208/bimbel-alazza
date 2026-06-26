@@ -12,9 +12,12 @@ const Navbar: React.FC = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 h-16 bg-white shadow-sm z-50 flex items-center justify-between px-4 md:px-8">
-      <span className="font-bold text-xl text-blue-600 tracking-tight">
-        Bimbel Alazza
-      </span>
+      <div className="flex items-center gap-2">
+        <img src="/images/logo.png" alt="Bimbel Alazza Logo" className="h-10 w-auto object-contain" />
+        <span className="font-bold text-xl text-blue-600 tracking-tight hidden sm:block">
+          Bimbel Alazza
+        </span>
+      </div>
       <button
         onClick={scrollToRegistration}
         className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-semibold rounded-full px-5 py-2 transition-colors duration-200"
