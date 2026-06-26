@@ -53,7 +53,7 @@ const HeroSection: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.3, ease: 'easeOut' }}
             className="mt-4 text-sm leading-relaxed text-blue-50 md:text-lg opacity-90"
           >
-            Rumah belajar yang berfokus pada pendampingan intensif, nyaman, dan menyenangkan. Bukan sekadar mengulang pelajaran, tapi membantu anak memahami konsep dasar dengan percaya diri dan pembiasaan adab keseharian
+            Rumah belajar yang berfokus pada pendampingan intensif, nyaman, dan menyenangkan. Bukan sekadar mengulang pelajaran, tetapi membantu anak memahami konsep dasar dengan percaya diri melalui pembelajaran yang terarah. Didukung dengan kurikulum iman dan adab, anak dibimbing untuk menumbuhkan kecintaan kepada Allah, membiasakan akhlak mulia dalam keseharian, serta membangun karakter yang kuat sejak dini.
           </motion.p>
 
           <motion.div

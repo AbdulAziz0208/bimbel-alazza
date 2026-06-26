@@ -36,7 +36,7 @@ const FAQItem: React.FC<FAQItemProps> = ({ question, answer, isOpen, onToggle })
             transition={{ duration: 0.3, ease: 'easeInOut' }}
             className="overflow-hidden"
           >
-            <p className="pb-5 text-sm leading-relaxed text-slate-600">
+            <p className="pb-5 text-sm leading-relaxed text-slate-600 whitespace-pre-line">
               {answer}
             </p>
           </motion.div>
@@ -59,8 +59,12 @@ const FAQSection: React.FC = () => {
       answer: "Tentu ada! Kami sangat transparan mengenai progres Ananda. Kami akan memberikan *Laporan Perkembangan Bulanan* yang berisi catatan tentang materi apa saja yang sudah dikuasai dan area mana yang perlu ditingkatkan bersama. Laporan ini kami kirimkan melalui WhatsApp atau print out setiap akhir bulan."
     },
     {
+      question: "Ada pelajaran apa saja sih yang tersedia di bimbel ini?",
+      answer: "• Preschool\n• IPA\n• Calistung\n• Bahasa Inggris\n• Mengulang pelajaran di sekolah (Kondisional)"
+    },
+    {
       question: "Bagaimana cara mengetahui kemajuan anak?",
-      answer: "Selain laporan tertulis, Ayah/Bunda bisa melihat kemajuan Ananda langsung dari peningkatan antusiasme belajar di rumah, kemandirian dalam mengerjakan PR, serta hasil evaluasi mingguan yang kami lakukan di kelas."
+      answer: "Setiap anak memiliki proses belajar dan perkembangan yang berbeda. Ada yang cepat memahami materi, ada pula yang membutuhkan waktu lebih lama. Karena itu, kemajuan anak tidak hanya dilihat dari kemampuan akademik seperti membaca, menulis, dan berhitung, tetapi juga dari perkembangan kepercayaan diri, kemandirian, fokus belajar, kemampuan bersosialisasi, serta pembiasaan iman dan adab dalam kesehariannya.\n\nKami juga memahami bahwa setiap anak memiliki jenis kecerdasan yang berbeda, seperti kecerdasan bahasa, logika, seni, sosial, maupun keterampilan lainnya. Oleh karena itu, kami mengajak orang tua untuk tidak menuntut anak harus langsung bisa dalam waktu tertentu, melainkan bersama-sama menikmati proses belajar dengan sabar dan penuh dukungan. Dengan pendampingan yang tepat, setiap anak akan berkembang sesuai potensi dan waktunya masing-masing, insyaAllah. 🌱✨"
     },
     {
       question: "Apakah ada evaluasi atau ujian berkala?",
