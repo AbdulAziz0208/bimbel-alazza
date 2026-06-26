@@ -21,6 +21,8 @@ const registrationSchema = z.object({
   schoolOrigin: z.string().optional(),
   gradeLevel: z.string().min(1, 'Pilih kelas'),
   programChoice: z.string().min(1, 'Pilih program'),
+  learningGoal: z.string().min(5, 'Ceritakan sedikit harapan Anda'),
+  meetingFrequency: z.string().min(1, 'Pilih jumlah pertemuan'),
 });
 
 type FormData = z.infer<typeof registrationSchema>;
@@ -62,6 +64,8 @@ export default function RegistrationForm() {
       schoolOrigin: '',
       gradeLevel: '',
       programChoice: '',
+      learningGoal: '',
+      meetingFrequency: '',
     },
   });
 
@@ -301,6 +305,50 @@ export default function RegistrationForm() {
                   {errors.programChoice && (
                     <p className={errorClasses}>
                       {errors.programChoice.message}
+                    </p>
+                  )}
+                </div>
+
+                {/* Target Pencapaian */}
+                <div>
+                  <label htmlFor="learningGoal" className={labelClasses}>
+                    Apa yang ingin dicapai pada anak?
+                  </label>
+                  <textarea
+                    id="learningGoal"
+                    rows={3}
+                    className={inputClasses}
+                    placeholder="Contoh: Ingin anak lebih lancar membaca dan percaya diri..."
+                    {...register('learningGoal')}
+                    suppressHydrationWarning
+                  />
+                  {errors.learningGoal && (
+                    <p className={errorClasses}>
+                      {errors.learningGoal.message}
+                    </p>
+                  )}
+                </div>
+
+                {/* Jumlah Pertemuan */}
+                <div>
+                  <label htmlFor="meetingFrequency" className={labelClasses}>
+                    Berapa kali pertemuan (dalam sebulan)?
+                  </label>
+                  <select
+                    id="meetingFrequency"
+                    className={inputClasses}
+                    defaultValue=""
+                    {...register('meetingFrequency')}
+                    suppressHydrationWarning
+                  >
+                    <option value="" disabled>Pilih jumlah pertemuan</option>
+                    <option value="4x Pertemuan">4x Pertemuan (1x seminggu)</option>
+                    <option value="8x Pertemuan">8x Pertemuan (2x seminggu)</option>
+                    <option value="12x Pertemuan">12x Pertemuan (3x seminggu)</option>
+                  </select>
+                  {errors.meetingFrequency && (
+                    <p className={errorClasses}>
+                      {errors.meetingFrequency.message}
                     </p>
                   )}
                 </div>

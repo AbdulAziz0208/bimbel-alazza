@@ -9,6 +9,8 @@ interface RegistrationData {
   schoolOrigin?: string;
   gradeLevel: string;
   programChoice: string;
+  learningGoal: string;
+  meetingFrequency: string;
   turnstileToken: string;
   utmSource?: string;
   utmMedium?: string;
@@ -44,6 +46,8 @@ export async function submitRegistration(data: RegistrationData) {
         school_origin: data.schoolOrigin || null,
         grade_level: data.gradeLevel,
         program_choice: data.programChoice,
+        learning_goal: data.learningGoal,
+        meeting_frequency: data.meetingFrequency,
         utm_source: data.utmSource || null,
         utm_medium: data.utmMedium || null,
         utm_campaign: data.utmCampaign || null,
@@ -122,6 +126,8 @@ async function sendEmailNotification(data: RegistrationData) {
               <tr><td style="padding: 8px 0; color: #64748B;">Asal Sekolah</td><td style="padding: 8px 0;">${data.schoolOrigin || '-'}</td></tr>
               <tr><td style="padding: 8px 0; color: #64748B;">Kelas</td><td style="padding: 8px 0; font-weight: bold;">${data.gradeLevel}</td></tr>
               <tr><td style="padding: 8px 0; color: #64748B;">Program</td><td style="padding: 8px 0; font-weight: bold;">${data.programChoice}</td></tr>
+              <tr><td style="padding: 8px 0; color: #64748B;">Jml. Pertemuan</td><td style="padding: 8px 0; font-weight: bold;">${data.meetingFrequency}</td></tr>
+              <tr><td style="padding: 8px 0; color: #64748B;">Target/Harapan</td><td style="padding: 8px 0;">${data.learningGoal}</td></tr>
               <tr><td style="padding: 8px 0; color: #64748B;">Sumber</td><td style="padding: 8px 0;">${data.utmSource || 'Direct'}</td></tr>
             </table>
             <hr style="border: 1px solid #E2E8F0;" />

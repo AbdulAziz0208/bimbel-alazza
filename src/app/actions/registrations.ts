@@ -24,7 +24,9 @@ export async function updateRegistration(id: number, data: any) {
       parent_whatsapp: data.parent_whatsapp,
       student_name: data.student_name,
       grade_level: data.grade_level,
-      program_choice: data.program_choice
+      program_choice: data.program_choice,
+      learning_goal: data.learning_goal,
+      meeting_frequency: data.meeting_frequency
     }).eq('id', id)
     
     if (error) {
