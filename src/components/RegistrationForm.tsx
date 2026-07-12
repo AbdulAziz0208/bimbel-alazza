@@ -28,7 +28,7 @@ const registrationSchema = z.object({
 type FormData = z.infer<typeof registrationSchema>;
 
 const gradeOptions = [
-  { label: 'Pra Sekolah/PAUD/TK', value: 'Pra Sekolah/PAUD/TK' },
+  { label: 'TK', value: 'TK' },
   { label: 'SD Kelas 1', value: 'SD Kelas 1' },
   { label: 'SD Kelas 2', value: 'SD Kelas 2' },
   { label: 'SD Kelas 3', value: 'SD Kelas 3' },

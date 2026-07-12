@@ -38,9 +38,8 @@ const ProgramSection: React.FC = () => {
             <Sparkles className="h-4 w-4 text-amber-500" />
             Biaya Pendaftaran GRATIS! ✨
           </div>
-          <div className="inline-flex items-center gap-2 rounded-full bg-blue-50 px-4 py-2 text-sm font-semibold text-blue-700 shadow-sm border border-blue-100">
-            <Sparkles className="h-4 w-4 text-amber-500" />
-            Biaya Modul Termasuk! ✨
+          <div className="inline-flex items-center gap-2 rounded-full bg-amber-50 px-4 py-2 text-sm font-semibold text-amber-700 shadow-sm border border-amber-100">
+            Belum Termasuk Biaya Modul! ✨
           </div>
         </div>
       </div>
