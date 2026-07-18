@@ -21,7 +21,7 @@ const registrationSchema = z.object({
   schoolOrigin: z.string().optional(),
   gradeLevel: z.string().min(1, 'Pilih kelas'),
   programChoice: z.string().min(1, 'Pilih program'),
-  learningGoal: z.string().min(5, 'Ceritakan sedikit harapan Anda'),
+  learningGoal: z.string().optional(),
   meetingFrequency: z.string().min(1, 'Pilih jumlah pertemuan'),
 });
 
@@ -312,7 +312,7 @@ export default function RegistrationForm() {
                 {/* Target Pencapaian */}
                 <div>
                   <label htmlFor="learningGoal" className={labelClasses}>
-                    Apa yang ingin dicapai pada anak?
+                    Apa yang ingin dicapai pada anak? (Opsional)
                   </label>
                   <textarea
                     id="learningGoal"
