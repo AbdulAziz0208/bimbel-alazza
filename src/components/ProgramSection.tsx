@@ -181,8 +181,8 @@ const ProgramSection: React.FC = () => {
       <div className="mt-12 text-center px-4 w-full">
         <div className="text-sm text-slate-600 bg-white inline-block px-6 py-5 rounded-3xl shadow-sm border border-slate-200 text-left w-full max-w-2xl">
           <p className="mb-4 text-center">
-            <span className="font-semibold text-slate-800">Catatan:</span> Biaya sudah meliputi fasilitas pembelajaran anak seperti Lembar Aktivitas & Modul. <br className="hidden sm:block" />
-            <span className="font-semibold text-blue-600">Pembayaran dilakukan pada saat pendaftaran di awal, bisa transfer atau cash.</span>
+            <span className="font-semibold text-slate-800">Catatan:</span> Biaya belum meliputi fasilitas pembelajaran anak seperti Lembar Aktivitas & Modul. <br className="hidden sm:block" />
+            <span className="font-semibold text-blue-600">Pembayaran dilakukan pada setiap saat pertemuan terkahir di bulan tersebut, bisa transfer atau cash.</span>
           </p>
           <div className="flex flex-col sm:flex-row gap-4 sm:gap-12 justify-center items-center pt-5 border-t border-slate-100">
             <div className="flex items-center gap-3">
